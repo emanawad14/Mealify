@@ -1,0 +1,89 @@
+@media screen and (max-width: 768px) {
+  .navbar ul li {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "picture"
+      "content";
+    text-align: center;
+  }
+  .picture {
+    order: -1;
+  }
+  .header-contant {
+    margin-bottom: 20px;
+  }
+
+  .header-contant h2 {
+    font-size: larger;
+    text-align: center;
+  }
+
+  .header-contant p {
+    font-size: 16px;
+  }
+  .header-contant .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header-contant h2 {
+    font-size: 60px;
+  }
+
+  .header-contant p {
+    font-size: 14px;
+  }
+}
+
+/*----------------chefs-------------------*/
+@media screen and (max-width: 1024px) {
+  .container-chef .card {
+    width: calc(50% - 20px); /* Two cards per row */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-name p,
+  .main-name span {
+    font-size: 35px; /* Adjust text size for tablets */
+  }
+
+  .container-chef .card {
+    width: calc(50% - 10px); /* Still two per row but with tighter spacing */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main-name p,
+  .main-name span {
+    font-size: 25px; /* Smaller text for mobile */
+  }
+
+  .container-chef .card {
+    width: 100%; /* One card per row on small screens */
+    margin: 10px 0; /* Space between each card */
+  }
+}
+
+/*----gallery---------*/
+
+/*------------contact--------*/
+@media screen  and (max-width:768px){
+    .contant-info .item-contant{
+        width: 100%;
+    }
+}
+/*-----------footer-----------*/
+@media screen and (max-width: 1200px) {
+    footer .footer-container :is(.about, .contact-details) {
+        width: calc(calc(100% - var(--gap)) / 2);
+        order: 1;
+    }
+}
